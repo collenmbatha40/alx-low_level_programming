@@ -1,8 +1,11 @@
 #include <stdio.h>
 
-/*main - prints the string using the puts funtion
- * Description: this funtion prints the string to stdout
- * Then it returns 0
+/**
+ * main - prints the string using the puts funtion
+ *
+ * Description:using the main function
+ * this code prints a 'Programming is like building a multilingual puzzle'
+ * Return:0
 */
 int main(void) 
 {
