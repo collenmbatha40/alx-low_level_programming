@@ -1,7 +1,10 @@
 #include <stdio.h>
-//main function prints a string to stdout using the 'puts' funtion//
+/* Description : main function prints a string using the puts function
+ * The function returns 0
+*/
+
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle\n");
+	("Programming is like building a multilingual puzzle\n");
 	return (0);
 }
