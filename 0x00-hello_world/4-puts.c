@@ -1,5 +1,4 @@
-#!/bin/bash
-#include <stdio>
+#include <stdio.h>
 int main(){
 	char answer = "Programming is like building a multilingual puzzle";
 	puts(answer);
