@@ -1,6 +1,6 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-
 /**
  * Main function is the beginning of the program
  *
