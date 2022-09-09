@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * Main function is the beginning of the program
+ * main - start point
  *
- * This program will assign a random number to the variable n each time it is executed.
+ * Program assigns a random number to variable n to see if its positive or not
  *
  * Return:0
 */
@@ -27,5 +27,5 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	return(0);
+	return (0);
 }
