@@ -1,1 +1,1 @@
-Studying more functions and nested loops in C
+0x04. C - More functions, more nested loops project
