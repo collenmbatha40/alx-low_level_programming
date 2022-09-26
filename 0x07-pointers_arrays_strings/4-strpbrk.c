@@ -7,21 +7,20 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int m = 0;
-	unsigned int n = 0;
+	unsigned int a, b;
 
-	for (s[m]; m++)
+	for (a = 0; s[a]; a++)
 	{
-		for (accept[n]; n++)
+		for (b = 0; accept[b]; b++)
 		{
-			if (s[m] == accept[n])
+			if (s[a] == accept[b])
 			{
 				break;
 			}
 		}
-		if (accept[n])
+		if (accept[b])
 		{
-			return (s + m);
+			return (s + a);
 		}
 	}
 	return (0);
