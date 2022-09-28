@@ -1,19 +1,19 @@
 #include "main.h"
 /**
  * square_root - calculates the square root of a number
- * @a: given number
- * @b: squared number
+ * @n: given number
+ * @a: squared number
  * Return: square root of a
  */
 int square_root(int n, int a)
 {
-	if (n * n == a)
-	{
-		return (n);
-	}
-	else if (n > a / 2)
+	if (n > a / 2)
 	{
 		return (-1);
+	}
+	else if (n * n == a)
+	{
+		return (n);
 	}
 	return (square_root(n + 1, a));
 }
