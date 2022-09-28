@@ -7,7 +7,7 @@
  * @pldrm: shows whether s is a palindrome
  * Return: void
  */
-void palindrome(char *s, int index1, int index2, int pldrm)
+void palindrome(char *s, int index1, int index2, int *pldrm)
 {
 	if (index1 <= index2)
 	{
