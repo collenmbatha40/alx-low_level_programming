@@ -1,13 +1,12 @@
 #include <stdio.h>
 /**
- * main - prints its name, followed by a new line
- * @argc: counter for an argument
- * @argv: argument
+ * main - prints its name, followed by a new line.
+ * @argc: counting argument
+ * @argv: vector argument
  * Return: 0
  */
-int main(char *argv[], int argc)
+int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[0]);
+	printf("%s\n", argv[0];
 	(void)argc;
 	return (0);
-}
