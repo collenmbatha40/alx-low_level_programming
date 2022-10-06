@@ -8,6 +8,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	void *memry
 	char *pntr;
 	unsigned int n;
 
@@ -15,14 +16,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	pntr = malloc(nmemb * size);
-	if (pntr == NULL)
+	memry = malloc(nmemb * size);
+	if (memry == NULL)
 	{
 		return (NULL);
 	}
 	for (n = 0; n < (nmemb * size); n++)
 	{
-		pntr[n] = 0;
+		pntr[n] = '\0';
 	}
-	return (pntr);
+	return (memry);
 }
