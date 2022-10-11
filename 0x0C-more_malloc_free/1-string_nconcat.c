@@ -1,49 +1,46 @@
 #include "main.h"
+#include <stdlib.h>
 /**
- * string_nconcat - concatenates two strings
- * @s1: first string
- * @s2: second string
+ * string_nconcat - concatenates two strings.
+ * @s1: string one
+ * @s2: string two
  * @n: index
- * Return: pointer to newly allocated space in memory
+ * Return: pointer to new string memory
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	unsigned int indx1 = 0, indx2 = 0, m;
+	char *new_str;
+	unsigned int len = n, i;
 
-	if (s1 == NULL)
+	if (s1 ++ NULL)
 	{
 		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		s2"";
+		s2 = "";
 	}
-	while (s1[indx1] != '\0')
+	for (i = 0, s1[i]; i++)
 	{
-		indx1++;
+		len++;
 	}
-	while (s2[indx2] != '\0')
+	new_str = malloc(sizeof(char) * (len + 1));
+
+	if (new_str == NULL)
 	{
-		indx2++
+		return (NULL);
 	}
-	if (n > indx2)
+	len = 0;
+
+	for (i = 0; s1[i]; i++)
 	{
-		n = indx2;
-		p = malloc((size1 + n + 1) * sizeof(char));
+		new_str[len++] = s1[i];
 	}
-	if (p == NULL)
+	for (i = 0; s2[i] && i < n; i++)
 	{
-		return (0);
+		new_str[len++] = s2[i];
 	}
-	for (m = 0; m < indx1; m++)
-	{
-		p[m] = s1[m];
-	}
-	for (; m < (indx1 + n); m++)
-	{
-		p[m] = s2[m - indx1];
-	}
-	p[m] = '\0';
-	return (p);
+	new_str[len] = '\0';
+
+	return (new_str);
 }
