@@ -1,4 +1,3 @@
-#include <string.h>
 #include "lists.h"
 /**
  * add_node - adds a new node at beginning of list
@@ -6,12 +5,10 @@
  * @str: string to be added
  * Return: address of added element.
  */
-
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
-	int num;
-	char *str2;
+	list_t *new_node;
+	size_t num;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
@@ -19,20 +16,16 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	str2 = strdup(str);
-	if (str2 == NULL)
-	{
-		free(new);
-		return (NULL);
-	}
+	new->str = strdup(str);
+
 	for (num = 0; str[num])
 	{
 		num++;
 	}
-	new->str = str2;
+
 	new->len = num;
 	new->next = *head;
 	*head = new;
 
-	return (new);
+	return (*head);
 }
