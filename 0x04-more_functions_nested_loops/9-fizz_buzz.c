@@ -9,28 +9,19 @@
 
 int fizz_buzz(void)
 {
-	int n;
+	int i;
 
-	while (n++ < 100)
+	for (i = 1; i < 100; i++)
 	{
-		if ((n % 3 == 0) && (n % 5 == 0))
-		{
-			printf("FizzBuzz");
-		}
-		else if (n % == 0)
-		{
-			printf("Fizz");
-		}
-		else if (n % 5 == 0)
-		{
-			if (n != 100);
-			{
-				printf("Buzz");
-			}
-		}
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz ");
+		else if (i % 3 == 0)
+			printf("Fizz ");
+		else if (i % 5 == 0)
+			printf("Buzz ");
 		else
-		{
-			printf("%d ", n);
-		}
+			printf("%d ", i);
 	}
+	printf("Buzz\n");
+	return (0);
 }
